@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #141516;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    height: 50px;
+    background: black;
+    width: 100%;
+}
+
+nav li {
+    width: 20%;
+    border: 1px solid grey;
+    padding-left: 5px;
+}
+
+nav li:hover {
+    background: rgb(74, 74, 74);
+}
+
+main {
+    width: 90%;
+}
+
+
+#home,
+#work,
+#about {
+    padding-top: 50px;
+}
+
+h1 {
+    font-weight: 900;
+    line-height: 90px;
+    color: white
+}
+
+#home div {
+    width: 40%;
+}
+
+.spl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pt2 {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    width: 600px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+.sub {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#contact {
+    border-top: 1px grey solid;
+    margin-top: 60px;
+}
+
+.contact {
+    margin: 20px 25%;
+    width: 60%;
+}
+
+#contact a {
+    text-decoration: none;
+    color: blue;
+    transition: 0.5s;
+    margin: 0 5px;
+}
+
+#contact a:hover {
+    color: #ffffff;
+}
+
+#work img {
+    width: 320px;
+}
+
+button {
+    background: #eaf0ce;
+    width: 220px;
+    padding: 5px 10px;
+    margin: 8px 0;
+}
+
+.sub {
+    font-size: 25px;
+    color: #c0c5c1;
+    margin-top: 10px;
+}
+
+i {
+    display: block;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    position: relative;
+}
+
+.icons::before {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.icons:hover::before {
+    opacity: 1;
+}
+
+.fa-instagram:hover {
+    color: orange;
+}
+
+.fa-facebook:hover {
+    color: #1877f2;
+}
+
+.fa-whatsapp:hover {
+    color: #25d366;
+}
+
+.fa-phone:hover {
+    color: #2196f3
+}
+
+.instagram::before {
+    content: "Instagram";
+}
+
+.facebook::before {
+    content: "Facebook";
+}
+
+.whatsapp::before {
+    content: "Whatsapp";
+}
+
+.phone::before {
+    content: "Call";
+}
+
+.spinner-border {
+    opacity: 0;
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 970px) {
+    nav {
+        margin-left: 20px;
+    }
+
+    .spl {
+        display: block;
+    }
+
+    .pt1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pt2 {
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 588px) {
+    li {
+        width: fit-content;
+    }
+
+}
+
+@media (max-width:835px) {
+
+
+    #home div {
+        width: 60%;
+    }
+}
